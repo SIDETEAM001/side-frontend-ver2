@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* 헤더,푸터 등 공통 영역 CSS */
+
+body *{
+  /* border: 1px dashed var(--Gray70); */
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+}
+
+/* 헤더 영역 */
+.headerContainer{
+  max-width: 1920px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 16px 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerContainer a{
+  font-size: 18px;
+  color: var(--Gray100);
+}
+/* 메뉴 관련 */
+.gnb__menu{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.gnb__item{
+  font-weight: bold;
+}
+.gnb__item:hover a{
+  color: var(--GREEN);
+}
+.logo>a{
+  width: 132px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Gray20);
+  border: 1px solid var(--BLACK);
+  font-weight: bold;
+}
+/* 계정 관련 */
+.account__menu{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.searchBox{
+  position: relative;
+}
+.searchBox input{
+  width: 335px;
+  height: 48px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--Gray10);
+}
+.searchBox input::placeholder{
+  color: var(--Gray30);
+}
+.searchBox button{
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
