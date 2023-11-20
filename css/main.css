@@ -1,3 +1,371 @@
 @charset "utf-8";
 
 /* 메인페이지 메인 영역 CSS */
+
+/* 상단 배너 */
+.topBanner{
+  position: relative;
+  max-width: 1920px;
+  height: 680px;
+  margin: 0 auto;
+  background-color: var(--Gray70);
+  color: var(--WHITE);
+  letter-spacing: -0.003em;
+}
+.topBanner .wrapper{
+  position: absolute;
+  bottom: 120px;
+  left: 240px;
+}
+.topBanner__eyebrow{
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.topBanner__title{
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 73px;
+}
+
+/* 커리어 QNA */
+.careerQnA{
+  max-width: 1920px;
+  height: 1004px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background-color: var(--bg-light-gray);
+  letter-spacing: -0.003em;
+}
+.careerQnA .wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.careerQnA__eyebrow{
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: var(--GREEN);
+}
+.careerQnA__title{
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+.careerQnA__more{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.003em;
+}
+.careerQnA__more>img{
+  width: 16px;
+  height: 16px;
+}
+
+/* 카드 */
+.cardsContainer{
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.card{
+  width: 336px;
+  height: 426px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--bg-white);
+  border-radius: 16px;
+  letter-spacing: -0.003em;
+}
+.card>img{
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.card__subject{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text03);
+}
+.card__title{
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.003em;
+  color: var(--Gray100);
+}
+.card__text{
+  width: 272px;
+  height: 120px;
+  margin-bottom: 40px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #667085;
+}
+.countItem{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+}
+.countItem>span{
+  margin-right: 8px;
+  color: var(--text03);
+}
+.countItem>span>img{
+  margin-right: 4px;
+}
+
+/* 자기계발 · 취미 모임 */
+.meetingClassification{
+  max-width: 1920px;
+  height: 1619px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  letter-spacing: -0.003em;
+}
+/* 전체 박스 영역 */
+.meetingClassification .wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.meetingClassification__eyebrow{
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: var(--GREEN);
+}
+.meetingClassification__title{
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+.meetingClassification .content{
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+/* 각 주제별 컨텐츠 영역 - 공통 부분 */
+/* 타이틀 부분 */
+.section__titleArea{
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 39px;
+}
+.section__more{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.section__more>img{
+  width: 16px;
+  height: 16px;
+}
+.meetingClassification__cardList{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+/* 카드 부분 */
+.meetingClassification__card{
+  width: 345px;
+  height: 418px;
+}
+.meetingClassification__card>.thumbImage{
+  width: 345px;
+  height: 258px;
+  margin-bottom: 24px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.cardLabel{
+  height: 28px;
+  margin-bottom: 12px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.003em;
+}
+.cardLabel.oneDay{
+  width: 61px;
+  background-color: #FBEBE3;
+  color: #E06324;
+}
+.cardLabel.shortTerm{
+  width: 49px;
+  background-color: #E3EEFB;
+  color: #0055A3;
+}
+.cardLabel.continue{
+  width: 49px;
+  background-color: #EBF8DC;
+  color: #51A300;
+  
+}
+.meetingClassification__card .title{
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--Gray100);
+}
+.meetingClassification__card .desc{
+  margin-bottom: 12px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text03);
+}
+.meetingClassification__card .numberOfPeople{
+  display: flex;
+  align-items: center;
+}
+.meetingClassification__card .desc>span+span::before{
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: var(--Gray40);
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+.hashtagList>li{
+  width: 121px;
+  height: 28px;
+  padding: 4px 12px;
+  background-color: var(--bg-gray);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* 근처 클래스 */
+.classAroundMe{
+  position: relative;
+  max-width: 1920px;
+  height: 738px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #6bb890, #7bc3ba);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: var(--WHITE);
+  letter-spacing: -0.003em;
+}
+.classAroundMe .content{
+  flex-shrink: 0;
+}
+.classAroundMe .content>img{
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+.classAroundMe__eyebrow{
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.classAroundMe__title{
+  width: 467px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 32px;
+}
+.classAroundMe__more{
+font-size: 18px;
+font-weight: 500;
+line-height: 25px;
+display: flex;
+align-items: center;
+gap: 4px;
+color: var(--WHITE);
+}
+.classAroundMeBanner{
+  flex-shrink: 0;
+}
+/* 캐러셀 스와이퍼 배너 */
+.swiper.classAroundMeBanner{
+  width: 60%;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #000;
+}
+.swiper-slide.classAroundMeBanner__slide {
+  background-position: center;
+  background-size: cover;
+  width: 345px;
+  height: 418px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 30px 60px 0px #0000000D;
+  text-align: center;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+.classAroundMeBanner__slide .textArea{
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.classAroundMeBanner__slide .title{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 10px;
+  color: var(--Gray100);
+}
+.classAroundMeBanner__slide .address{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: var(--text03);
+}
+.classAroundMeBanner__slide .hashtagList>li{
+  width: max-content;
+}
