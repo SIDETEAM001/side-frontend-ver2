@@ -6,6 +6,10 @@
   <title>사부작</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/main.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
   <!-- 띠 배너 -->
@@ -332,6 +336,67 @@
       </div>
     </section>
     <!-- 4.근처 클래스 -->
+    <section class="classAroundMe">
+      <div class="content">
+        <img src="./assets/svgs/icon-location.svg" alt="로케이션 아이콘">
+        <p class="classAroundMe__eyebrow">근처 클래스</p>
+        <h2 class="classAroundMe__title">
+          내 주변에 있는 클래스들이
+          <br>
+          궁금하신가요?
+        </h2>
+        <a href="" class="classAroundMe__more">
+          <p>더보기</p>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.75 4L17 12.25L8.75 20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="swiper classAroundMeBanner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide classAroundMeBanner__slide slide01">
+            <img src="https://picsum.photos/id/10/200" alt="">
+            <div class="textArea">
+              <p class="title">파워짐 휘트니스</p>
+              <p class="address">중구 진관동 82번지</p>
+              <ul class="hashtagList">
+                <li>#운동 · 스포츠</li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide classAroundMeBanner__slide slide02">
+            <img src="https://picsum.photos/id/20/200" alt="">
+            <div class="textArea">
+              <p class="title">아뜰리에 나무 반지 공방</p>
+              <p class="address">중구 진관동 82번지</p>
+              <ul class="hashtagList">
+                <li>#공예/만들기</li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide classAroundMeBanner__slide slide03">
+            <img src="https://picsum.photos/id/30/200" alt="">
+            <div class="textArea">
+              <p class="title">김낭만 기타 학원</p>
+              <p class="address">중구 진관동 82번지</p>
+              <ul class="hashtagList">
+                <li>#음악/악기</li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide classAroundMeBanner__slide slide03">
+            <img src="https://picsum.photos/id/40/200" alt="">
+            <div class="textArea">
+              <p class="title">얼기설기 공방</p>
+              <p class="address">중구 진관동 82번지</p>
+              <ul class="hashtagList">
+                <li>#공예/만들기</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- 5.기간별 모임 -->
     <section class="meetingClassification">
       <div class="wrapper">
@@ -491,5 +556,6 @@
   </footer>
   <!-- 플로팅 메뉴 -->
   <ul class="floatingMenu"></ul>
+  <script src="./js/index.js"></script>
 </body>
 </html>
